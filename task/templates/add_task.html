@@ -1,0 +1,18 @@
+{%extends 'base.html'%}
+{%block body_block%}
+ <div class="container border border-5 mt-5">
+    <h4>
+        <div class="text-center">Add Task</div>   
+        <div class="text-center"></div>
+    </h4>
+    <form action="" method="post">
+        {%csrf_token%}
+        <div class="mt-3"><label for="">Add task</label>
+            <input type="text" class="form-control" name="task">
+        </div>
+        <div class="text-center">
+        <div class="mt-4">
+            <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    </div>
+{%endblock%}
